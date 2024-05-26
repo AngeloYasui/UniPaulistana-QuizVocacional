@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Vocacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo-da-escola.png" alt="Logo da Escola" class="logo">
+        <h1>Quiz Vocacional</h1>
+        <form id="quiz-form">
+            <div class="question" data-course="psicologia">
+                <p>1. Você gosta de ajudar as pessoas a resolverem seus problemas emocionais?</p>
+                <label><input type="radio" name="q1" value="1"> Sim</label>
+                <label><input type="radio" name="q1" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="pedagogia">
+                <p>2. Você tem interesse em ensinar e orientar crianças e jovens?</p>
+                <label><input type="radio" name="q2" value="1"> Sim</label>
+                <label><input type="radio" name="q2" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="logistica">
+                <p>3. Você gosta de planejar e coordenar o transporte de mercadorias?</p>
+                <label><input type="radio" name="q3" value="1"> Sim</label>
+                <label><input type="radio" name="q3" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="contabilidade">
+                <p>4. Você se sente confortável lidando com números e finanças?</p>
+                <label><input type="radio" name="q4" value="1"> Sim</label>
+                <label><input type="radio" name="q4" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="rh">
+                <p>5. Você gosta de trabalhar com gestão de pessoas e recursos humanos?</p>
+                <label><input type="radio" name="q5" value="1"> Sim</label>
+                <label><input type="radio" name="q5" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="administracao">
+                <p>6. Você gosta de gerenciar projetos e processos administrativos?</p>
+                <label><input type="radio" name="q6" value="1"> Sim</label>
+                <label><input type="radio" name="q6" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="financas">
+                <p>7. Você se interessa por investimentos e gestão financeira?</p>
+                <label><input type="radio" name="q7" value="1"> Sim</label>
+                <label><input type="radio" name="q7" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="psicologia">
+                <p>8. Você tem facilidade para ouvir e entender os problemas dos outros?</p>
+                <label><input type="radio" name="q8" value="1"> Sim</label>
+                <label><input type="radio" name="q8" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="pedagogia">
+                <p>9. Você tem paciência e empatia ao ensinar outras pessoas?</p>
+                <label><input type="radio" name="q9" value="1"> Sim</label>
+                <label><input type="radio" name="q9" value="0"> Não</label>
+            </div>
+            <div class="question" data-course="logistica">
+                <p>10. Você gosta de resolver problemas logísticos e otimizar processos?</p>
+                <label><input type="radio" name="q10" value="1"> Sim</label>
+                <label><input type="radio" name="q10" value="0"> Não</label>
+            </div>
+            <div class="question">
+                <p>11. Com qual dessas imagens você mais se identifica?</p>
+                <div class="image-options">
+                    <label>
+                        <input type="radio" name="q11" value="image1">
+                        <img src="images/image1.jpg" alt="Opção 1" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="image2">
+                        <img src="images/image2.jpg" alt="Opção 2" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="image3">
+                        <img src="images/image3.jpg" alt="Opção 3" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="image4">
+                        <img src="images/image4.jpg" alt="Opção 4" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="image5">
+                        <img src="images/image5.jpg" alt="Opção 5" class="option-image">
+                    </label>
+                </div>
+            </div>
+            <button type="button" onclick="calculateResult()">Enviar</button>
+        </form>
+    </div>
+    <div class="result" id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
